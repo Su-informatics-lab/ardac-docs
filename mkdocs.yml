@@ -1,0 +1,48 @@
+site_name: ARDaC Documentation
+site_description: User documentation for the Alcohol Research Data Commons
+site_url: https://su-informatics-lab.github.io/ardac-docs/
+repo_url: https://github.com/Su-informatics-lab/ardac-docs
+repo_name: Su-informatics-lab/ardac-docs
+
+theme:
+  name: material
+  logo: assets/images/ardac-logo.png
+  favicon: assets/images/favicon.ico
+  font:
+    text: Montserrat
+    code: Roboto Mono
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.top
+    - search.highlight
+    - search.suggest
+  palette:
+    - scheme: default
+      primary: deep purple
+      accent: red
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Access: access.md
+  - Finding Data: finding-data.md
+  - Metadata: metadata.md
+  - Support: support.md
+
+extra_css:
+  - assets/stylesheets/ardac.css
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
+
+extra:
+  homepage: https://su-informatics-lab.github.io/ardac-docs/
+  generator: false
